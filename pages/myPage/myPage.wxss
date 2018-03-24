@@ -1,0 +1,4 @@
+/** 完全遵顼css语法，单位比css高级的点**/
+.color-red{
+  color:red
+}

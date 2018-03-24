@@ -1,0 +1,36 @@
+<!--数据绑定
+   1 数据在哪 必须来源与js文件中 Page的data
+   2 绑定到哪去  (想绑定到哪就在哪里进行输出 用mustache语法输出)
+-->
+<view class="container">
+    <!--小胡子语法 mustache-->
+    <!--mustache可以用在
+        1 类似 innerHTML() 中 就是元素标签内
+        2 元素属性上 class=” {{ }} “
+        不能用在标签名和属性名上
+    -->
+    <text>{{title}}</text>
+    <text class="active {{ viewClassName }}">{{title}}</text>
+    <!--
+        使用字面量
+        简单的运算
+        三元表达式
+        正确解析布尔值
+    -->
+    <text class="active {{ viewClassName }}">{{"我帮你"}}</text>
+    <text class="active {{ viewClassName }}">{{111}}</text>
+    <text class="active {{ viewClassName }}">{{ 1+2 }}</text>
+    <text class="active {{ viewClassName }}">{{ 1+2 >0 ? "对了" : "错误" }}</text>
+    <!--
+        当语法解析误解了true/false
+        可用{{}} 解决
+    -->
+    <checkbox checked="false">"false"</checkbox>
+    <checkbox checked="true">"true"</checkbox>
+    <checkbox checked="{{true}}">胡子true</checkbox>
+    <checkbox checked="{{false}}">胡子false</checkbox>
+
+    <!--条件渲染-->
+    <text wx:for="{{ objs }}" wx:key="index">{{item}}</text>
+</view>
+
