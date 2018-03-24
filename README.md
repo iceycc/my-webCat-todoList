@@ -14,6 +14,4 @@ http://www.wxapp-union.com/article-3774-1.html
 
 clone下来，导出微信开发者工具即可运行
 
-实现效果如下：
 
-![效果图](https://raw.githubusercontent.com/ch563/TodoList-wechat/master/demo.gif)
