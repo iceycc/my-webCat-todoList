@@ -6,7 +6,13 @@ Page({
   data:{
     title:"王冰洋",
     objs:["1","2"],
-    viewClassName:"color-red"
+    viewClassName:"color-red",
+    todos:[
+      {name:"JavaScript",completed:true},
+      {name:"HTML",completed:true},
+      {name:"CSS",completed:false}
+    ],
+    item:"做："
   },
 
   onLoad:function(){

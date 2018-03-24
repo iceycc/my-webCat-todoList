@@ -17,7 +17,7 @@
         三元表达式
         正确解析布尔值
     -->
-    <text class="active {{ viewClassName }}">{{"我帮你"}}</text>
+    <text class="active {{ viewClassName }}">{{"啊哈哈"}}</text>
     <text class="active {{ viewClassName }}">{{111}}</text>
     <text class="active {{ viewClassName }}">{{ 1+2 }}</text>
     <text class="active {{ viewClassName }}">{{ 1+2 >0 ? "对了" : "错误" }}</text>
@@ -30,7 +30,20 @@
     <checkbox checked="{{true}}">胡子true</checkbox>
     <checkbox checked="{{false}}">胡子false</checkbox>
 
-    <!--条件渲染-->
-    <text wx:for="{{ objs }}" wx:key="index">{{item}}</text>
+    <!--
+    条件渲染 wx:for=""
+      1 明确页面结构中的循环体
+      2 删除多余的的重复内容 只保留一个
+      3 在剩下的这个上面加上wx:for="遍历的数据源" 数据源是数组或者对象
+      4 在这个标签（循环体） 内部使用item 代表 循环的内当前的遍历的元素
+      5 如果全局属性中有item这种关键词 优先使用循环内部的item
+      可以使用wx:for-item="aa"起别名！！
+      可以使用wx:for-index="ii" 起别名！！    -->
+        <text wx:for="{{ objs }}" wx:key="index">{{item}}</text>
+    <!--todolist-->
+    <text>todo</text>
+    <checkbox wx:for="{{todos}}" checked="{{ aaa.completed }}" wx:for-item="aaa" wx:key="index">{{item}} {{aaa.name}}</checkbox>
+
+    <!--wx:if="" 显示或隐藏-->
 </view>
 

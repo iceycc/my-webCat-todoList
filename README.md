@@ -12,6 +12,6 @@ http://www.wxapp-union.com/article-3774-1.html
 - 添加时间显示
 - 滑动删除
 
-clone下来，导出微信开发者工具即可运行
+clone下来，导出微信开发者工具即可运行 1
 
 
