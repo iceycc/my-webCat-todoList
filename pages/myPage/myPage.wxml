@@ -45,5 +45,11 @@
     <checkbox wx:for="{{todos}}" checked="{{ aaa.completed }}" wx:for-item="aaa" wx:key="index">{{item}} {{aaa.name}}</checkbox>
 
     <!--wx:if="" 显示或隐藏-->
-</view>
 
+    <block wx:if="{{ isShow }}">
+        <text>我显示了码</text>
+        <text>我显示了码</text>
+    </block>
+    <button bindtap="doTap">点击我</button>
+
+</view>

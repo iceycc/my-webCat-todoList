@@ -12,7 +12,8 @@ Page({
       {name:"HTML",completed:true},
       {name:"CSS",completed:false}
     ],
-    item:"做："
+    item:"做：",
+    isShow:true
   },
 
   onLoad:function(){
@@ -20,5 +21,15 @@ Page({
     console.log(getCurrentPages());
     app.foo()
     foo.say("王冰洋")
+  },
+  doTap:function(e){
+    console.log(this.data);
+    console.dir(e);
+    console.log("tap事件触发了")
+    // 页面怎么不会不实时改变呢
+    // this.data.isShow = false
+    this.setData({
+      isShow:!this.data.isShow
+    })
   }
 })

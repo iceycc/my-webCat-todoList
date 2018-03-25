@@ -1,0 +1,14 @@
+<view class="container">
+    <!--事件基本的使用 ： 就是通过给组件添加一个 bind+事件名 的属性 属性的值指向-->
+    <!--1 事件冒泡-->
+    <!--阻止冒泡事件 catchtap=""-->
+    <view class="outer" bindtap="tapOuter">
+        <view class="inner" catchtap="tapInner"> </view>
+    </view>
+    <!--2  事件传参  通过 e.target.dataset 获取data-xx的集合 -->
+    <button bindtap="sendDate" data-name="张三" data-age="18" data-like-food="馒头">点我</button>
+
+    <!--单项数据绑定-->
+    <text>{{msg}}</text>
+    <input bindinput="doInput" value="{{msg}}" style="background:#ccc"/>
+</view>
