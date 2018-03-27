@@ -1,7 +1,14 @@
 {
   "pages": [
+    "pages/demo1/demo1",
+    "pages/formPage/index",
+    "pages/uiPage/index",
+    "pages/login/login",
+    "pages/event/event",
     "pages/myPage/myPage",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/demo3/demo3",
+    "pages/demo2/demo2"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,28 +22,28 @@
   },
   "debug": false,
   "tabBar": {
-    "color":"blue",
-    "selectedColor":"red",
-    "backgroundColor":"#ccc",
-    "position":"bottom",
+    "color": "blue",
+    "selectedColor": "red",
+    "backgroundColor": "#ccc",
+    "position": "bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "王冰洋",
-        "iconPath":"",
-        "selectedIconPath":""
+        "iconPath": "",
+        "selectedIconPath": ""
       },
       {
         "pagePath": "pages/myPage/myPage",
         "text": "首页"
       },
       {
-        "pagePath": "pages/myPage/myPage",
-        "text": "其他"
+        "pagePath": "pages/formPage/index",
+        "text": "index"
       },
       {
-        "pagePath": "pages/myPage/myPage",
-        "text": "哈哈"
+        "pagePath": "pages/login/login",
+        "text": "login"
       }
     ]
   }
