@@ -6,4 +6,9 @@
        2 接受 onload的第一个参数
 
 -->
-<navigator url="../demo2/demo2" redirect> 跳转过去不回来了</navigator>
+<text class="text">hahah1</text>
+
+<navigator url="../demo2/demo2"> 跳转过去不回来了</navigator>
+
+<navigator hover-class="my-hover">ddd</navigator>
+<button type="primary" bindtap="tapHandler">跳转过去</button>

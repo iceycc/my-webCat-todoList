@@ -1,0 +1,6 @@
+.my-hover{
+  color:red
+}
+.text{
+  cursor:pointer;
+}

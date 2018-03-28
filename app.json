@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/mytodos/mytodos",
     "pages/demo1/demo1",
     "pages/formPage/index",
     "pages/uiPage/index",
@@ -8,7 +9,9 @@
     "pages/myPage/myPage",
     "pages/index/index",
     "pages/demo3/demo3",
-    "pages/demo2/demo2"
+    "pages/demo2/demo2",
+    "pages/todos/todos"  
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,12 +41,12 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/formPage/index",
-        "text": "index"
+        "pagePath": "pages/mytodos/mytodos",
+        "text": "mytodos"
       },
       {
-        "pagePath": "pages/login/login",
-        "text": "login"
+        "pagePath": "pages/todos/todos",
+        "text": "todos"
       }
     ]
   }
